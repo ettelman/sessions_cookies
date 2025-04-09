@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil</title>
+    {% if theme == "dark" %}
+        <style>
+            body {
+                background-color: #111;
+                color: white;
+            }
+        </style>
+    {% endif %}
+</head>
+<body>
+    <h2>Välkommen, {{ username }}!</h2>
+    <p>Det här är en skyddad sida.</p>
+
+    <p>Valt tema: <strong>{{ theme }}</strong></p>
+    <a href="/theme/light">Light Mode</a> |
+    <a href="/theme/dark">Dark Mode</a> |
+    <a href="/logout">Logga ut</a>
+</body>
+</html>

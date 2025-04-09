@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Logga in</title>
+  </head>
+  <body>
+    <h2>Logga in</h2>
+    {% if error %}
+    <p style="color: red">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+      <label>Användarnamn:</label>
+      <input type="text" name="username" required /><br />
+      <label>Lösenord:</label>
+      <input type="password" name="password" required /><br />
+      <button type="submit">Logga in</button>
+    </form>
+  </body>
+</html>
