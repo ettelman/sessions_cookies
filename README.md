@@ -24,5 +24,5 @@ php -S localhost:8000
 ```bash
 cd sessions
 npm install
-node index
+node server
 ```
